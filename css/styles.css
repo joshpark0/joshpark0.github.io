@@ -10,6 +10,28 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+/* 내가 추가 사 */
+.box01{
+              text-align: center;
+          }
+          .box01 input{
+              border: none;
+              font-size: 15px;
+              outline: none;
+              text-align: center;
+          }
+          .box01 button{
+              border:none;
+              width:60px;
+              max-width: 100px;
+              vertical-align: bottom;
+          }
+          .box01 button img{
+              width: 100%;
+          }
+/* 내가 추가 하 */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

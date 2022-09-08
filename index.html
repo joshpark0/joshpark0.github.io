@@ -28,6 +28,10 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- 클릭시 복사 -->
+    <script src="js/copy_email.js"></script>
+    <!-- 클릭시 복사 -->
   </head>
   <body id="page-top">
     <!-- Navigation-->
@@ -44,9 +48,7 @@
             alt="..."
         /></span>
       </a>
-      <button onclick="window.location.href = 'index2.html'">
-        index2.html
-      </button>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -60,30 +62,42 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience"
               >Experience</a
             >
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education"
               >Education</a
             >
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests"
               >Interests</a
             >
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" onclick="window.location.href = 'index2.html'">한글</a>
+           
+          </li>
+
         </ul>
       </div>
     </nav>
@@ -97,8 +111,13 @@
             <span class="text-primary">joung hyeok</span>
           </h1>
           <div class="subheading mb-5">
-            3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-            <a href="mailto:name@email.com">name@email.com</a>
+            <input  id="email" value='joshpark0@gmail.com' style='border:none; outline:none;text-align:center;' readonly></input
+            ><button
+              onclick="copy_to_email()"
+              style="font-size: 5px; border: 1px"
+            >
+              email copy
+            </button>
           </div>
           <p class="lead mb-5">
             I am experienced in leveraging agile frameworks to provide a robust
@@ -107,14 +126,10 @@
             proposition.
           </p>
           <div class="social-icons">
-            <a class="social-icon" href="#!"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+            <!-- <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a> -->
             <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="#!"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
+            <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
           </div>
         </div>
       </section>
